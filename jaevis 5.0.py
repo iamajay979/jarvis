@@ -1,7 +1,7 @@
-import pyttsx3  # pip install pyttsx3
-import speech_recognition as sr  # pip install speechRecognition
+import pyttsx3  
+import speech_recognition as sr  
 import datetime
-import wikipedia  # pip install wikipedia
+import wikipedia  
 import webbrowser
 import os
 import smtplib
@@ -91,7 +91,7 @@ if __name__ == "__main__":
 
 
         elif 'send a message' in query:
-            kit.sendwhatmsg ("+917710468917","this is testing protocoal",9,33)
+            kit.sendwhatmsg ("+911234567890","this is testing protocoal",9,33)
 
         elif 'play song on youtube' in query:
             
@@ -112,16 +112,6 @@ if __name__ == "__main__":
             webbrowser.open("github.com")
 
 
-
-
-
-
-        elif 'play music' in query:
-            music_dir = 'D:\\Non Critical\\songs\\Favorite Songs2'
-            songs = os.listdir(music_dir)
-            print(songs)
-            os.startfile(os.path.join(music_dir, songs[0]))
-
         elif 'the time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"Sir, the time is {strTime}")
@@ -137,6 +127,6 @@ if __name__ == "__main__":
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("Sorry my friend ajay bhai. I am not able to send this email")
+                speak("Sorry my friend ajay . I am not able to send this email")
 
 
